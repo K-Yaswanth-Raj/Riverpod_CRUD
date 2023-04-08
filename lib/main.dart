@@ -34,7 +34,7 @@ class HomePage extends ConsumerWidget {
           onPressed: () {
             ref
                 .read(numberProvider.notifier)
-                .add('num${Random().nextInt(100)}');
+                .add('num ${Random().nextInt(100)}');
           },
           child: Icon(Icons.add),
         ),
